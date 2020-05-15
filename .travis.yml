@@ -16,7 +16,7 @@ script:
   - tools/build
 
 env:
-  - VERBOSE=1 TESTING=1
+  - VERBOSE=1
 
 deploy:
   provider: pages
