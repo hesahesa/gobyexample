@@ -12,6 +12,7 @@ install:
   - go get -u github.com/russross/blackfriday
 
 script:
+  - mkdir public
   - tools/build
 
 env:
