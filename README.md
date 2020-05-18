@@ -1,69 +1,100 @@
-# Go by Example
+[![Build Status](https://travis-ci.com/hesahesa/gobyexample.svg?branch=master)](https://travis-ci.com/hesahesa/gobyexample)
+# Go by Example dalam bahasa Indonesia!
 
-Content and build toolchain for [Go by Example](https://gobyexample.com),
-a site that teaches Go via annotated example programs.
+Terjemahan [Go by Example](http://hesa.github.io/gobyexample/). dalam bahasa Indonesia
 
-### Overview
+### Yang sudah diterjemahkan
+Hello World :white_check_mark:
+Values :white_check_mark:
+Variables :white_check_mark:
+Constants
+For
+If/Else
+Switch
+Arrays
+Slices
+Maps
+Range
+Functions
+Multiple Return Values
+Variadic Functions
+Closures
+Recursion
+Pointers
+Structs
+Methods
+Interfaces
+Errors
+Goroutines
+Channels
+Channel Buffering
+Channel Synchronization
+Channel Directions
+Select
+Timeouts
+Non-Blocking Channel Operations
+Closing Channels
+Range over Channels
+Timers
+Tickers
+Worker Pools
+WaitGroups
+Rate Limiting
+Atomic Counters
+Mutexes
+Stateful Goroutines
+Sorting
+Sorting by Functions
+Panic
+Defer
+Collection Functions
+String Functions
+String Formatting
+Regular Expressions
+JSON
+XML
+Time
+Epoch
+Time Formatting / Parsing
+Random Numbers
+Number Parsing
+URL Parsing
+SHA1 Hashes
+Base64 Encoding
+Reading Files
+Writing Files
+Line Filters
+File Paths
+Directories
+Temporary Files and Directories
+Testing
+Command-Line Arguments
+Command-Line Flags
+Command-Line Subcommands
+Environment Variables
+HTTP Clients
+HTTP Servers
+Context
+Spawning Processes
+Exec'ing Processes
+Signals
+Exit
 
-The Go by Example site is built by extracting code and
-comments from source files in `examples` and rendering
-them via the `templates` into a static `public`
-directory. The programs implementing this build process
-are in `tools`, along with some vendor'd dependencies
-in `vendor`.
+### Lisensi
 
-The built `public` directory can be served by any
-static content system. The production site uses S3 and
-CloudFront, for example.
+This work is copyright Prahesa K Setia and licensed under a
+[Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
-### Building
-
-[![Build Status](https://travis-ci.com/mmcgrana/gobyexample.svg "Travis CI status")](https://travis-ci.com/mmcgrana/gobyexample)
-
-To build the site you'll need Go and Python installed. Run:
-
-```console
-$ go get github.com/russross/blackfriday
-$ tools/build
-```
-
-To build continuously in a loop:
-
-```console
-$ tools/build-loop
-```
-
-To see the site locally:
-
-```
-$ tools/serve
-```
-
-and open `http://127.0.0.1:8000/` in your browser.
-
-### Publishing
-
-To upload the site:
-
-```console
-$ gem install aws-sdk
-$ export AWS_ACCESS_KEY_ID=...
-$ export AWS_SECRET_ACCESS_KEY=...
-$ tools/upload
-```
-
-### License
-
-This work is copyright Mark McGranaghan and licensed under a
+Based on the work by Mark McGranaghan and licensed under a
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
 The Go Gopher is copyright [Renée French](http://reneefrench.blogspot.com/) and licensed under a
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
 
-### Translations
+### Terjemahan
 
-Contributor translations of the Go by Example site are available in:
+Terjemahan juga tersedia di bahasa:
 
 * [Chinese](https://gobyexample-cn.github.io/) by [gobyexample-cn](https://github.com/gobyexample-cn)
 * [Czech](http://gobyexamples.sweb.cz/) by [martinkunc](https://github.com/martinkunc/gobyexample-cz)
