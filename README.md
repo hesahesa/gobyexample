@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/hesahesa/gobyexample.svg?branch=master)](https://travis-ci.com/hesahesa/gobyexample)
 # Go by Example dalam bahasa Indonesia!
 
-Terjemahan [Go by Example](http://hesa.github.io/gobyexample/). dalam bahasa Indonesia
+Terjemahan [Go by Example](http://hesahesa.github.io/gobyexample/). dalam bahasa Indonesia
 
 ### Yang sudah diterjemahkan
  - Hello World :white_check_mark:
