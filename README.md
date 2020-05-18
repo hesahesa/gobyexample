@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/hesahesa/gobyexample.svg?branch=master)](https://travis-ci.com/hesahesa/gobyexample)
 # Go by Example dalam bahasa Indonesia!
 
-Terjemahan [Go by Example](http://hesahesa.github.io/gobyexample/). dalam bahasa Indonesia
+Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indonesia
 
 ### Yang sudah diterjemahkan
  - Hello World :white_check_mark:
@@ -105,7 +105,7 @@ Terjemahan juga tersedia di bahasa:
 * [Russian](https://gobyexample.com.ru/) by [badkaktus](https://github.com/badkaktus)
 * [Spanish](http://goconejemplos.com) by the [Go Mexico community](https://github.com/dabit/gobyexample)
 * [Ukrainian](http://butuzov.github.io/gobyexample/) by [butuzov](https://github.com/butuzov/gobyexample)
-* [Indonesian](http://hesahesa.github.io/gobyexample/) by [hesahesa](https://github.com/hesahesa/gobyexample)
+* [Indonesian](http://gobyexample.prahesa.id/) by [hesahesa](https://github.com/hesahesa/gobyexample)
 
 ### Thanks
 
