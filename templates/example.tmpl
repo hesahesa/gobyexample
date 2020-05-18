@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Go dengan Contoh">
+    <meta property="og:title" content="Go dengan Contoh: {{.Name}}">
+    <meta property="og:description" content="{{.DocsRendered}}">
+    <meta property="og:url" content="http://gobyexample.prahesa.id/{{.ID}}">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
     <title>Go dengan Contoh: {{.Name}}</title>
     <link rel=stylesheet href="site.css">
   </head>
