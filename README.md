@@ -7,7 +7,7 @@ Terjemahan [Go by Example](http://hesa.github.io/gobyexample/). dalam bahasa Ind
  - Hello World :white_check_mark:
  - Values :white_check_mark:
  - Variables :white_check_mark:
- - Constants
+ - Constants :white_check_mark:
  - For
  - If/Else
  - Switch

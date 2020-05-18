@@ -1,5 +1,5 @@
-// Go supports _constants_ of character, string, boolean,
-// and numeric values.
+// Go mendukung _konstanta_ untuk karakter (character),
+// deret karakter (string), boolean, dan nilai numerik.
 
 package main
 
@@ -8,28 +8,30 @@ import (
 	"math"
 )
 
-// `const` declares a constant value.
-const s string = "constant"
+// `const` mendeklarasikan sebuah nilai konstanta.
+const s string = "konstanta"
 
 func main() {
 	fmt.Println(s)
 
-	// A `const` statement can appear anywhere a `var`
-	// statement can.
+	// Statemen `const` bisa muncul dimanapun statemen
+	// `var` bisa.
 	const n = 500000000
 
-	// Constant expressions perform arithmetic with
-	// arbitrary precision.
+	// Ekspresi konstan melakukan aritmetika dengan
+	// presisi arbitrari.
 	const d = 3e20 / n
 	fmt.Println(d)
 
-	// A numeric constant has no type until it's given
-	// one, such as by an explicit conversion.
+	// Sebuah konstan numerik tidak punya tipe hingga
+	// dia diberi sebuah tipe, misalnya dengan konversi
+	// eksplisit.
 	fmt.Println(int64(d))
 
-	// A number can be given a type by using it in a
-	// context that requires one, such as a variable
-	// assignment or function call. For example, here
-	// `math.Sin` expects a `float64`.
+	// Sebuah angka dapat diberikan sebuah tipe dengan
+	// menggunakannya dalam konteks yang membutuhkan
+	// tipe, misalnya pemberian nilai variabel (variable
+	// assignment) atau pemanggilan fungsi.
+	// Contohnya, disini `math.Sin` mengharapkan suatu `float64`.
 	fmt.Println(math.Sin(n))
 }
