@@ -5,7 +5,8 @@
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Go dengan Contoh">
     <meta property="og:title" content="Go dengan Contoh: {{.Name}}">
-    <meta property="og:description" content="{{(index .Segs 0).Docs}}">
+    {{$firstSeg := index .Segs 0 0}}
+    <meta property="og:description" content="{{$firstSeg.Docs}}">
     <meta property="og:url" content="http://gobyexample.prahesa.id/{{.ID}}">
     <meta property="og:locale" content="id_ID">
     <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
