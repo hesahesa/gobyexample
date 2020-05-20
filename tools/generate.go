@@ -260,7 +260,7 @@ func parseExamples() []*Example {
 			example.I18nName = example.Name
 		} else {
 			example.Name = strSplits[0]
-			example.I18nName = strSplits[1] + "(" + example.Name + ")"
+			example.I18nName = strSplits[1] + " (" + example.Name + ")"
 		}
 		exampleID := strings.ToLower(example.Name)
 		exampleID = strings.Replace(exampleID, " ", "-", -1)
