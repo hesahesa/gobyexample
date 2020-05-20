@@ -25,7 +25,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Methods
  - Interfaces
  - Errors
- - Goroutines :white_check_mark
+ - Goroutines :white_check_mark:
  - Channels
  - Channel Buffering
  - Channel Synchronization
