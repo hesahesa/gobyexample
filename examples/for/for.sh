@@ -11,5 +11,5 @@ loop
 5
 
 # Kita nanti akan melihat bentuk-bentuk lain dari `for`
-# saatu kita melihat statement `range`, kanal (channel),
+# saat kita melihat statement `range`, kanal (channel),
 # dan beberapa struktur data lain.

@@ -14,7 +14,6 @@ func main() {
 		fmt.Println("7 ganjil")
 	}
 
-	// You can have an `if` statement without an else.
 	// Kamu bisa punya sebuah `if` tanpa sebuah `else`
 	if 8%4 == 0 {
 		fmt.Println("8 habis dibagi 4")
