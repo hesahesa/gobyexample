@@ -4,7 +4,7 @@ Variables:Variabel
 Constants:Konstanta
 For:Perulangan dengan For
 If/Else:Percabangan dengan If/Else
-Switch
+Switch:Percabangan dengan Switch
 Arrays
 Slices
 Maps

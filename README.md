@@ -10,7 +10,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Constants :white_check_mark:
  - For :white_check_mark:
  - If/Else :white_check_mark:
- - Switch
+ - Switch :white_check_mark:
  - Arrays
  - Slices
  - Maps
