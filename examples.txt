@@ -2,8 +2,8 @@ Hello World:Halo Dunia
 Values:Nilai
 Variables:Variabel
 Constants:Konstanta
-For
-If/Else
+For:Perulangan dengan For
+If/Else:Percabangan dengan If/Else
 Switch
 Arrays
 Slices

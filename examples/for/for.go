@@ -1,5 +1,5 @@
-// `for` is Go's only looping construct. Here are
-// some basic types of `for` loops.
+// `for` adalah satu-satunya fitur perulangan di Go.
+// Ini adalah beberapa tipe dasar perulangan `for`.
 
 package main
 
@@ -7,28 +7,28 @@ import "fmt"
 
 func main() {
 
-	// The most basic type, with a single condition.
+	// Tipa yang paling dasar, dengan sebuah kondisi.
 	i := 1
 	for i <= 3 {
 		fmt.Println(i)
 		i = i + 1
 	}
 
-	// A classic initial/condition/after `for` loop.
+	// Perulangan `for` dengan nilai awal/kondisi/setelah.
 	for j := 7; j <= 9; j++ {
 		fmt.Println(j)
 	}
 
-	// `for` without a condition will loop repeatedly
-	// until you `break` out of the loop or `return` from
-	// the enclosing function.
+	// `for` tanpa sebuah kondisi akan berulang terus-menerus
+	// sampai kamu `break` keluar dari perulangan atau
+	// `return` dari blok fungsi.
 	for {
 		fmt.Println("loop")
 		break
 	}
 
-	// You can also `continue` to the next iteration of
-	// the loop.
+	// Kamu juga bisa `continue` untuk melanjutkan ke
+	// iterasi selanjutnya dari perulangan.
 	for n := 0; n <= 5; n++ {
 		if n%2 == 0 {
 			continue

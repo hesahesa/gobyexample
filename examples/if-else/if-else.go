@@ -1,5 +1,5 @@
-// Branching with `if` and `else` in Go is
-// straight-forward.
+// Percabangan dengan `if` dan `else` di Go
+// cukuplah jelas.
 
 package main
 
@@ -7,29 +7,30 @@ import "fmt"
 
 func main() {
 
-	// Here's a basic example.
+	// Ini adalah sebuah contoh sederhana.
 	if 7%2 == 0 {
-		fmt.Println("7 is even")
+		fmt.Println("7 genap")
 	} else {
-		fmt.Println("7 is odd")
+		fmt.Println("7 ganjil")
 	}
 
 	// You can have an `if` statement without an else.
+	// Kamu bisa punya sebuah `if` tanpa sebuah `else`
 	if 8%4 == 0 {
-		fmt.Println("8 is divisible by 4")
+		fmt.Println("8 habis dibagi 4")
 	}
 
-	// A statement can precede conditionals; any variables
-	// declared in this statement are available in all
-	// branches.
+	// Sebuah statemen dapat mendahului kondisional; variabel
+	// apapun yang dinyatakan dalam statemen ini akan
+	// tersedia di semua percabangan.
 	if num := 9; num < 0 {
-		fmt.Println(num, "is negative")
+		fmt.Println(num, "negatif")
 	} else if num < 10 {
-		fmt.Println(num, "has 1 digit")
+		fmt.Println(num, "punya 1 digit")
 	} else {
-		fmt.Println(num, "has multiple digits")
+		fmt.Println(num, "punya banyak digit")
 	}
 }
 
-// Note that you don't need parentheses around conditions
-// in Go, but that the braces are required.
+// Catatan: kamu tidak perlu tanda kurung "()" disekitar kondisi
+// di Go, tapi tanda kurung kurawal "{}" diperlukan.

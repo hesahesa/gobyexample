@@ -8,8 +8,8 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Values :white_check_mark:
  - Variables :white_check_mark:
  - Constants :white_check_mark:
- - For
- - If/Else
+ - For :white_check_mark:
+ - If/Else :white_check_mark:
  - Switch
  - Arrays
  - Slices
