@@ -11,7 +11,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - For :white_check_mark:
  - If/Else :white_check_mark:
  - Switch :white_check_mark:
- - Arrays
+ - Arrays :white_check_mark:
  - Slices
  - Maps
  - Range
@@ -19,13 +19,13 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Multiple Return Values
  - Variadic Functions
  - Closures
- - Recursion
+ - Recursion :white_check_mark:
  - Pointers
  - Structs
  - Methods
  - Interfaces
  - Errors
- - Goroutines
+ - Goroutines :white_check_mark
  - Channels
  - Channel Buffering
  - Channel Synchronization

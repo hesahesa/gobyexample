@@ -1,16 +1,17 @@
-# When we run this program, we see the output of the
-# blocking call first, then the interleaved output of the
-# two goroutines. This interleaving reflects the
-# goroutines being run concurrently by the Go runtime.
+# Saat kita menjalankan program ini, pertama kita 
+# melihat keluaran dari pemanggilan fungsi blocking, lalu
+# penyisipan keluaran dari dua gorutin. Penyisipan ini
+# memperlihatkan gorutin-gorutin sedang dijalankan secara
+# bersamaan oleh runtime Go.
 $ go run goroutines.go
-direct : 0
-direct : 1
-direct : 2
-goroutine : 0
-going
-goroutine : 1
-goroutine : 2
-done
+langsung : 0
+langsung : 1
+langsung : 2
+gorutin : 0
+anonim
+gorutin : 1
+gorutin : 2
+selesai
 
-# Next we'll look at a complement to goroutines in
-# concurrent Go programs: channels.
+# Selanjutnya kita akan melihat pelengkap dari gorutin
+# pada program konkuren Go: kanal (channel).

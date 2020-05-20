@@ -13,13 +13,13 @@ Functions
 Multiple Return Values
 Variadic Functions
 Closures
-Recursion
+Recursion:Rekursi
 Pointers
 Structs
 Methods
 Interfaces
 Errors
-Goroutines
+Goroutines:Gorutin
 Channels
 Channel Buffering
 Channel Synchronization

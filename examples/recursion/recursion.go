@@ -1,13 +1,13 @@
-// Go supports
-// <a href="http://en.wikipedia.org/wiki/Recursion_(computer_science)"><em>recursive functions</em></a>.
-// Here's a classic factorial example.
+// Go mendukung
+// <a href="http://en.wikipedia.org/wiki/Recursion_(computer_science)"><em>fungsi rekursif</em></a>.
+// Ini adalah contoh klasik faktorial.
 
 package main
 
 import "fmt"
 
-// This `fact` function calls itself until it reaches the
-// base case of `fact(0)`.
+// Fungsi `fact` ini memanggil dirinya sendiri hingga dia
+// sampai ke kasus dasar (base case), yaitu `fact(0)`.
 func fact(n int) int {
 	if n == 0 {
 		return 1
