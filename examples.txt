@@ -5,8 +5,8 @@ Constants:Konstanta
 For:Perulangan dengan For
 If/Else:Percabangan dengan If/Else
 Switch:Percabangan dengan Switch
-Arrays
-Slices
+Arrays:Deret elemen dengan Array
+Slices:Deret elemen dengan Slice
 Maps
 Range
 Functions

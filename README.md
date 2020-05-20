@@ -12,7 +12,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - If/Else :white_check_mark:
  - Switch :white_check_mark:
  - Arrays :white_check_mark:
- - Slices
+ - Slices :white_check_mark:
  - Maps
  - Range
  - Functions

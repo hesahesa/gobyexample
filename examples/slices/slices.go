@@ -1,5 +1,6 @@
-// _Slices_ are a key data type in Go, giving a more
-// powerful interface to sequences than arrays.
+// _Slice_ adalah tipe data utama dalam Go, memberikan
+// antarmuka yang lebih kuat untuk deretan jika dibandingkan
+// dengan array.
 
 package main
 
@@ -7,63 +8,65 @@ import "fmt"
 
 func main() {
 
-	// Unlike arrays, slices are typed only by the
-	// elements they contain (not the number of elements).
-	// To create an empty slice with non-zero length, use
-	// the builtin `make`. Here we make a slice of
-	// `string`s of length `3` (initially zero-valued).
+	// Beda dengan array, slice digolongkan hanya oleh
+	// elemen yang menyertainya (bukan jumlah elemen).
+	// Untuk membuat slice kosong dengan panjang tidak nol,
+	// gunakan `make`. Di sini kita membuat sebuah slice
+	// dari `string` dengan panjang `3` (nilai awal nol).
 	s := make([]string, 3)
 	fmt.Println("emp:", s)
 
-	// We can set and get just like with arrays.
+	// Kita dapat menentukan dan mengambil elemen seperti
+	// array.
 	s[0] = "a"
 	s[1] = "b"
 	s[2] = "c"
 	fmt.Println("set:", s)
 	fmt.Println("get:", s[2])
 
-	// `len` returns the length of the slice as expected.
+	// `len` mengembalikan panjang dari slice.
 	fmt.Println("len:", len(s))
 
-	// In addition to these basic operations, slices
-	// support several more that make them richer than
-	// arrays. One is the builtin `append`, which
-	// returns a slice containing one or more new values.
-	// Note that we need to accept a return value from
-	// `append` as we may get a new slice value.
+	// Sebagai tambahan untuk operasi-operasi dasar, slice
+	// mendukung beberapa hal lain yang membuatnya lebih kaya
+	// daripada array. Salah satunya adalah `append`, yang
+	// mengembalikan sebuah slice yang mengandung satu atau
+	// lebih nilai baru. Catatan: kita harus menerima nilai
+	// kembalian dari `append` karena kita mungkin mendapatkan
+	// sebuah slice baru.
 	s = append(s, "d")
 	s = append(s, "e", "f")
 	fmt.Println("apd:", s)
 
-	// Slices can also be `copy`'d. Here we create an
-	// empty slice `c` of the same length as `s` and copy
-	// into `c` from `s`.
+	// Slice juga bisa disalin (dengan `copy`). Di sini kita
+	// membuat slice kosong `c` dengan panjang yang sama
+	// dengan `s` dan menyalin `s` ke `c`.
 	c := make([]string, len(s))
 	copy(c, s)
 	fmt.Println("cpy:", c)
 
-	// Slices support a "slice" operator with the syntax
-	// `slice[low:high]`. For example, this gets a slice
-	// of the elements `s[2]`, `s[3]`, and `s[4]`.
+	// Slice mendukung operator "slice" dengan sintaks
+	// `slice[kecil:besar]`. Sebagai contoh, ini mengambil
+	// sebuah slice dengan elemen `s[2]`, `s[3]`, and `s[4]`.
 	l := s[2:5]
 	fmt.Println("sl1:", l)
 
-	// This slices up to (but excluding) `s[5]`.
+	// Slice ini berisi hingga (tapi tidak termasuk) `s[5]`.
 	l = s[:5]
 	fmt.Println("sl2:", l)
 
-	// And this slices up from (and including) `s[2]`.
+	// Dan slice ini berisi dari (dan termasuk) `s[2]`.
 	l = s[2:]
 	fmt.Println("sl3:", l)
 
-	// We can declare and initialize a variable for slice
-	// in a single line as well.
+	// Kita bisa menyatakan dan meng-inisialisasi sebuah
+	// variabel untuk slice dengan satu baris kode.
 	t := []string{"g", "h", "i"}
 	fmt.Println("dcl:", t)
 
-	// Slices can be composed into multi-dimensional data
-	// structures. The length of the inner slices can
-	// vary, unlike with multi-dimensional arrays.
+	// Slice bisa dibentuk kedalam struktur data multi
+	// dimemsi. Panjang dari slice dalam bisa tidak sama,
+	// beda seperti array multi dimensi.
 	twoD := make([][]int, 3)
 	for i := 0; i < 3; i++ {
 		innerLen := i + 1
