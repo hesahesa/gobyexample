@@ -1,6 +1,6 @@
 // _Slice_ adalah tipe data utama dalam Go, memberikan
-// antarmuka yang lebih kuat untuk deretan jika dibandingkan
-// dengan array.
+// antarmuka yang lebih kuat untuk deretan jika
+// dibandingkan dengan array.
 
 package main
 
@@ -32,7 +32,7 @@ func main() {
 	// daripada array. Salah satunya adalah `append`, yang
 	// mengembalikan sebuah slice yang mengandung satu atau
 	// lebih nilai baru. Catatan: kita harus menerima nilai
-	// kembalian dari `append` karena kita mungkin mendapatkan
+	// kembalian dari `append` karena kita mungkin mendapat
 	// sebuah slice baru.
 	s = append(s, "d")
 	s = append(s, "e", "f")

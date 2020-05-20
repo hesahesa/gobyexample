@@ -13,8 +13,9 @@ sl3: [c d e f]
 dcl: [g h i]
 2d:  [[0] [1 2] [2 3 4]]
 
-# Cek [postingan blog keren](http://blog.golang.org/2011/01/go-slices-usage-and-internals.html) ini
-# oleh tim Go untuk detil menyeluruh dari rancangan dan implementasi slice di Go.
+# Cek [postingan blog keren](http://blog.golang.org/2011/01/go-slices-usage-and-internals.html)
+# ini oleh tim Go untuk detil menyeluruh dari rancangan 
+# dan implementasi slice di Go.
 
 # Sekarang kita sudah melihat array dan slice, kita akan
 # mempelajari struktur data lain di Go: map.
