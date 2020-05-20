@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Go dengan Contoh">
-    <meta property="og:title" content="Go dengan Contoh: {{.Name}}">
+    <meta property="og:title" content="Go dengan Contoh: {{.I18nName}}">
     <meta property="og:url" content="http://gobyexample.prahesa.id/{{.ID}}">
     <meta property="og:locale" content="id_ID">
     <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
-    <title>Go dengan Contoh: {{.Name}}</title>
+    <title>Go dengan Contoh: {{.I18nName}}</title>
     <link rel=stylesheet href="site.css">
   </head>
   <script>
@@ -27,7 +27,7 @@
   </script>
   <body>
     <div class="example" id="{{.ID}}">
-      <h2><a href="./">Go dengan Contoh</a>: {{.Name}}</h2>
+      <h2><a href="./">Go dengan Contoh</a>: {{.I18nName}}</h2>
       {{range .Segs}}
       <table>
         {{range .}}
@@ -45,7 +45,7 @@
       {{end}}
       {{if .NextExample}}
       <p class="next">
-        Contoh selanjutnya: <a href="{{.NextExample.ID}}">{{.NextExample.Name}}</a>.
+        Contoh selanjutnya: <a href="{{.NextExample.ID}}">{{.NextExample.I18nName}}</a>.
       </p>
       {{end}}
       <p class="footer">

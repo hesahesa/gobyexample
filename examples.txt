@@ -1,7 +1,7 @@
-Hello World
-Values
-Variables
-Constants
+Hello World:Halo Dunia
+Values:Nilai
+Variables:Variabel
+Constants:Konstanta
 For
 If/Else
 Switch

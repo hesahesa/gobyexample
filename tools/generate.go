@@ -135,7 +135,7 @@ type Seg struct {
 
 // Example is info extracted from an example file
 type Example struct {
-	ID, Name                    string
+	ID, Name, I18nName          string
 	GoCode, GoCodeHash, URLHash string
 	Segs                        [][]*Seg
 	PrevExample                 *Example
@@ -240,19 +240,29 @@ func parseAndRenderSegs(sourcePath string) ([]*Seg, string) {
 }
 
 func parseExamples() []*Example {
-	var exampleNames []string
+	var exampleLines []string
 	for _, line := range readLines("examples.txt") {
 		if line != "" && !strings.HasPrefix(line, "#") {
-			exampleNames = append(exampleNames, line)
+			exampleLines = append(exampleLines, line)
 		}
 	}
 	examples := make([]*Example, 0)
-	for i, exampleName := range exampleNames {
+	for i, exampleLine := range exampleLines {
 		if verbose() {
-			fmt.Printf("Processing %s [%d/%d]\n", exampleName, i+1, len(exampleNames))
+			fmt.Printf("Processing %s [%d/%d]\n", exampleLine, i+1, len(exampleLines))
 		}
-		example := Example{Name: exampleName}
-		exampleID := strings.ToLower(exampleName)
+
+		strSplits := strings.Split(exampleLine, ":")
+
+		example := Example{}
+		if len(strSplits) == 1 {
+			example.Name = strSplits[0]
+			example.I18nName = example.Name
+		} else {
+			example.Name = strSplits[0]
+			example.I18nName = strSplits[1] + "(" + example.Name + ")"
+		}
+		exampleID := strings.ToLower(example.Name)
 		exampleID = strings.Replace(exampleID, " ", "-", -1)
 		exampleID = strings.Replace(exampleID, "/", "-", -1)
 		exampleID = strings.Replace(exampleID, "'", "", -1)
