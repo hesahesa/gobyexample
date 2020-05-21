@@ -26,7 +26,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Interfaces
  - Errors
  - Goroutines :white_check_mark:
- - Channels
+ - Channels :white_check_mark:
  - Channel Buffering
  - Channel Synchronization
  - Channel Directions
