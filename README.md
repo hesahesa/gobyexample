@@ -14,7 +14,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Arrays :white_check_mark:
  - Slices :white_check_mark:
  - Maps :white_check_mark:
- - Range
+ - Range :white_check_mark:
  - Functions
  - Multiple Return Values
  - Variadic Functions
