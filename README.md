@@ -13,7 +13,7 @@ Terjemahan [Go by Example](http://gobyexample.prahesa.id/). dalam bahasa Indones
  - Switch :white_check_mark:
  - Arrays :white_check_mark:
  - Slices :white_check_mark:
- - Maps
+ - Maps :white_check_mark:
  - Range
  - Functions
  - Multiple Return Values

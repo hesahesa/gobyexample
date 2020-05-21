@@ -7,7 +7,7 @@ If/Else:Percabangan dengan If/Else
 Switch:Percabangan dengan Switch
 Arrays:Deret elemen dengan Array
 Slices:Deret elemen dengan Slice
-Maps:Tipe Data Asosiatif dengan Map
+Maps:Tipe Data Asosiatif
 Range:Perulangan dengan Range
 Functions:Fungsi
 Multiple Return Values:Nilai Kembalian Banyak
