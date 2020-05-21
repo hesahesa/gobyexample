@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Go dengan Contoh">
+    <meta property="og:title" content="Go dengan Contoh: Halo Dunia (Hello World)">
+    <meta property="og:url" content="http://gobyexample.prahesa.id/hello-world">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
+    <title>Go dengan Contoh: Halo Dunia (Hello World)</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'values';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="hello-world">
+      <h2><a href="./">Go dengan Contoh</a>: Halo Dunia (Hello World)</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Program pertama kita akan mencetak kode klasik pesan &ldquo;hello world&rdquo;.
+Beginilah sumber kode lengkapnya</p>
+
+          </td>
+          <td class="code leading">
+            <a href="http://play.golang.org/p/JC5P264jnCG"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+          <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code">
+            
+          <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;hello world&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Untuk menjalankan program, letakkan kode di file
+<code>hello-world.go</code> dan gunakan <code>go run</code>.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="gp">$</span> go run hello-world.go
+<span class="go">hello world</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Terkadang kita ingin mem-build program kita ke sebuah
+binary. Kita bisa melakukan ini dengan <code>go build</code>.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="gp">$</span> go build hello-world.go
+<span class="gp">$</span> ls
+<span class="go">hello-world    hello-world.go</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Kita lalu bisa menjalankan binary yang telah di-build
+secara langsung.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="gp">$</span> ./hello-world
+<span class="go">hello world</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Sekarang kita telah bisa menjalankan dan mem-build
+program Go sederhana, mari belajar lebih lanjut
+tentang bahasa ini.</p>
+
+          </td>
+          <td class="code empty">
+            
+          
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Contoh selanjutnya: <a href="values">Nilai (Values)</a>.
+      </p>
+      
+      <p class="footer">
+        oleh <a href="http://prahesa.id">Prahesa K Setia</a> | <a href="https://github.com/hesahesa/gobyexample">kode sumber</a> | <a href="https://github.com/hesahesa/gobyexample#license">lisensi</a>
+      </p>
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('package main\u000A');codeLines.push('import \"fmt\"\u000A');codeLines.push('func main() {\u000A    fmt.Println(\"hello world\")\u000A}\u000A');codeLines.push('');codeLines.push('');codeLines.push('');codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4406489,4,0,0,0,00000000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4406489&101" alt="counter" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+  </body>
+</html>

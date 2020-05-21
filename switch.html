@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Go dengan Contoh">
+    <meta property="og:title" content="Go dengan Contoh: Percabangan dengan Switch (Switch)">
+    <meta property="og:url" content="http://gobyexample.prahesa.id/switch">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
+    <title>Go dengan Contoh: Percabangan dengan Switch (Switch)</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'if-else';
+          }
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'arrays';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="switch">
+      <h2><a href="./">Go dengan Contoh</a>: Percabangan dengan Switch (Switch)</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Statemen <em>switch</em> menyatakan kondisional dengan banyak
+percabangan.</p>
+
+          </td>
+          <td class="code empty leading">
+            
+          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            <a href="http://play.golang.org/p/_9gotv7LkQ5"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+          <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&quot;fmt&quot;</span>
+    <span class="s">&quot;time&quot;</span>
+<span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Ini adalah sebuah <code>switch</code> sederhana.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre>    <span class="nx">i</span> <span class="o">:=</span> <span class="mi">2</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Print</span><span class="p">(</span><span class="s">&quot;Tulis &quot;</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="s">&quot; sebagai &quot;</span><span class="p">)</span>
+    <span class="k">switch</span> <span class="nx">i</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;satu&quot;</span><span class="p">)</span>
+    <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;dua&quot;</span><span class="p">)</span>
+    <span class="k">case</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;tiga&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Kamu bisa menggunakan koma untuk memisahkan beberapa
+ekspresi dalam statemen <code>case</code> yang sama.
+Kita juga menggunakan opsional <code>default</code> juga di contoh
+ini.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre>    <span class="k">switch</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Now</span><span class="p">().</span><span class="nx">Weekday</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Saturday</span><span class="p">,</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Sunday</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Ini weekend&quot;</span><span class="p">)</span>
+    <span class="k">default</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Ini weekday&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p><code>switch</code> tanpa sebuah ekspresi adalah sebuah cara lain
+untuk menyatakan logika if/else.
+Di sini kita juga menunjukkan kalau ekspresi <code>case</code>
+bisa dinyatakan tanpa konstanta.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre>    <span class="nx">t</span> <span class="o">:=</span> <span class="nx">time</span><span class="p">.</span><span class="nx">Now</span><span class="p">()</span>
+    <span class="k">switch</span> <span class="p">{</span>
+    <span class="k">case</span> <span class="nx">t</span><span class="p">.</span><span class="nx">Hour</span><span class="p">()</span> <span class="p">&lt;</span> <span class="mi">12</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Ini sebelum tengah hari&quot;</span><span class="p">)</span>
+    <span class="k">default</span><span class="p">:</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Ini setelah tengah hari&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Sebuah tipe <code>switch</code> membandingkan tipe, bukan nilai.
+Kamu bisa menggunakan ini untuk mencaritahu tipe dari
+sebuah nilai interface.
+Di contoh ini, variabel <code>t</code> akan punya tipe sesuai dengan
+kondisinya.</p>
+
+          </td>
+          <td class="code">
+            
+          <div class="highlight"><pre>    <span class="nx">whatAmI</span> <span class="o">:=</span> <span class="kd">func</span><span class="p">(</span><span class="nx">i</span> <span class="kd">interface</span><span class="p">{})</span> <span class="p">{</span>
+        <span class="k">switch</span> <span class="nx">t</span> <span class="o">:=</span> <span class="nx">i</span><span class="p">.(</span><span class="kd">type</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">case</span> <span class="kt">bool</span><span class="p">:</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Aku sebuah bool&quot;</span><span class="p">)</span>
+        <span class="k">case</span> <span class="kt">int</span><span class="p">:</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;Aku sebuah int&quot;</span><span class="p">)</span>
+        <span class="k">default</span><span class="p">:</span>
+            <span class="nx">fmt</span><span class="p">.</span><span class="nx">Printf</span><span class="p">(</span><span class="s">&quot;Tidak tahu tipe %T\n&quot;</span><span class="p">,</span> <span class="nx">t</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="nx">whatAmI</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+    <span class="nx">whatAmI</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nx">whatAmI</span><span class="p">(</span><span class="s">&quot;hey&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code">
+            
+          <div class="highlight"><pre><span class="gp">$</span> go run switch.go 
+<span class="go">Tulis 2 sebagai dua</span>
+<span class="go">Ini weekday</span>
+<span class="go">Ini setelah tengah hari</span>
+<span class="go">Aku sebuah bool</span>
+<span class="go">Aku sebuah int</span>
+<span class="go">Tidak tahu tipe string</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Contoh selanjutnya: <a href="arrays">Deret elemen dengan Array (Arrays)</a>.
+      </p>
+      
+      <p class="footer">
+        oleh <a href="http://prahesa.id">Prahesa K Setia</a> | <a href="https://github.com/hesahesa/gobyexample">kode sumber</a> | <a href="https://github.com/hesahesa/gobyexample#license">lisensi</a>
+      </p>
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('');codeLines.push('package main\u000A');codeLines.push('import (\u000A    \"fmt\"\u000A    \"time\"\u000A)\u000A');codeLines.push('func main() {\u000A');codeLines.push('    i :\x3D 2\u000A    fmt.Print(\"Tulis \", i, \" sebagai \")\u000A    switch i {\u000A    case 1:\u000A        fmt.Println(\"satu\")\u000A    case 2:\u000A        fmt.Println(\"dua\")\u000A    case 3:\u000A        fmt.Println(\"tiga\")\u000A    }\u000A');codeLines.push('    switch time.Now().Weekday() {\u000A    case time.Saturday, time.Sunday:\u000A        fmt.Println(\"Ini weekend\")\u000A    default:\u000A        fmt.Println(\"Ini weekday\")\u000A    }\u000A');codeLines.push('    t :\x3D time.Now()\u000A    switch {\u000A    case t.Hour() \x3C 12:\u000A        fmt.Println(\"Ini sebelum tengah hari\")\u000A    default:\u000A        fmt.Println(\"Ini setelah tengah hari\")\u000A    }\u000A');codeLines.push('    whatAmI :\x3D func(i interface{}) {\u000A        switch t :\x3D i.(type) {\u000A        case bool:\u000A            fmt.Println(\"Aku sebuah bool\")\u000A        case int:\u000A            fmt.Println(\"Aku sebuah int\")\u000A        default:\u000A            fmt.Printf(\"Tidak tahu tipe %T\\n\", t)\u000A        }\u000A    }\u000A    whatAmI(true)\u000A    whatAmI(1)\u000A    whatAmI(\"hey\")\u000A}\u000A');codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4406489,4,0,0,0,00000000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4406489&101" alt="counter" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+  </body>
+</html>

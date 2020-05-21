@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Go dengan Contoh">
+    <meta property="og:title" content="Go dengan Contoh: Rekursi (Recursion)">
+    <meta property="og:url" content="http://gobyexample.prahesa.id/recursion">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
+    <title>Go dengan Contoh: Rekursi (Recursion)</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'closures';
+          }
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'pointers';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="recursion">
+      <h2><a href="./">Go dengan Contoh</a>: Rekursi (Recursion)</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Go mendukung
+<a href="http://en.wikipedia.org/wiki/Recursion_(computer_science)"><em>fungsi rekursif</em></a>.
+Ini adalah contoh klasik faktorial.</p>
+
+          </td>
+          <td class="code empty leading">
+            
+          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            <a href="http://play.golang.org/p/tFRggbkGShs"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+          <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Fungsi <code>fact</code> ini memanggil dirinya sendiri hingga dia
+sampai ke kasus dasar (base case), yaitu <code>fact(0)</code>.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kd">func</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="nx">n</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">n</span> <span class="o">*</span> <span class="nx">fact</span><span class="p">(</span><span class="nx">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code">
+            
+          <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">fact</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code">
+            
+          <div class="highlight"><pre><span class="gp">$</span> go run recursion.go 
+<span class="go">5040</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Contoh selanjutnya: <a href="pointers">Pointer (Pointers)</a>.
+      </p>
+      
+      <p class="footer">
+        oleh <a href="http://prahesa.id">Prahesa K Setia</a> | <a href="https://github.com/hesahesa/gobyexample">kode sumber</a> | <a href="https://github.com/hesahesa/gobyexample#license">lisensi</a>
+      </p>
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('');codeLines.push('package main\u000A');codeLines.push('import \"fmt\"\u000A');codeLines.push('func fact(n int) int {\u000A    if n \x3D\x3D 0 {\u000A        return 1\u000A    }\u000A    return n * fact(n-1)\u000A}\u000A');codeLines.push('func main() {\u000A    fmt.Println(fact(7))\u000A}\u000A');codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4406489,4,0,0,0,00000000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4406489&101" alt="counter" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+  </body>
+</html>

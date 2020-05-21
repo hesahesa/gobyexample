@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Go dengan Contoh">
+    <meta property="og:title" content="Go dengan Contoh: Percabangan dengan If/Else (If/Else)">
+    <meta property="og:url" content="http://gobyexample.prahesa.id/if-else">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:image" content="http://gobyexample.prahesa.id/favicon.ico">
+    <title>Go dengan Contoh: Percabangan dengan If/Else (If/Else)</title>
+    <link rel=stylesheet href="site.css">
+  </head>
+  <script>
+      onkeydown = (e) => {
+          
+          if (e.key == "ArrowLeft") {
+              window.location.href = 'for';
+          }
+          
+          
+          if (e.key == "ArrowRight") {
+              window.location.href = 'switch';
+          }
+          
+      }
+  </script>
+  <body>
+    <div class="example" id="if-else">
+      <h2><a href="./">Go dengan Contoh</a>: Percabangan dengan If/Else (If/Else)</h2>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Percabangan dengan <code>if</code> dan <code>else</code> di Go
+cukuplah jelas.</p>
+
+          </td>
+          <td class="code empty leading">
+            
+          
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            <a href="http://play.golang.org/p/SSKOGAygzWl"><img title="Run code" src="play.png" class="run" /></a><img title="Copy code" src="clipboard.png" class="copy" />
+          <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Ini adalah sebuah contoh sederhana.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre>    <span class="k">if</span> <span class="mi">7</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;7 genap&quot;</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;7 ganjil&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Kamu bisa punya sebuah <code>if</code> tanpa sebuah <code>else</code></p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre>    <span class="k">if</span> <span class="mi">8</span><span class="o">%</span><span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;8 habis dibagi 4&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Sebuah statemen dapat mendahului kondisional; variabel
+apapun yang dinyatakan dalam statemen ini akan
+tersedia di semua percabangan.</p>
+
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre>    <span class="k">if</span> <span class="nx">num</span> <span class="o">:=</span> <span class="mi">9</span><span class="p">;</span> <span class="nx">num</span> <span class="p">&lt;</span> <span class="mi">0</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="s">&quot;negatif&quot;</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="nx">num</span> <span class="p">&lt;</span> <span class="mi">10</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="s">&quot;punya 1 digit&quot;</span><span class="p">)</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="s">&quot;punya banyak digit&quot;</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Catatan: kamu tidak perlu tanda kurung &ldquo;()&rdquo; disekitar kondisi
+di Go, tapi tanda kurung kurawal &ldquo;{}&rdquo; diperlukan.</p>
+
+          </td>
+          <td class="code empty">
+            
+          
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+            
+          <div class="highlight"><pre><span class="gp">$</span> go run <span class="k">if</span>-else.go 
+<span class="go">7 genap</span>
+<span class="go">8 habis dibagi 4</span>
+<span class="go">9 punya 1 digit</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Tidak ada <a href="http://en.wikipedia.org/wiki/%3F:">ternary if</a>
+di Go, jadi kamu harus menggunakan statemen <code>if</code> lengkap
+bahkan untuk kondisi sederhana.</p>
+
+          </td>
+          <td class="code empty">
+            
+          
+          </td>
+        </tr>
+        
+      </table>
+      
+      
+      <p class="next">
+        Contoh selanjutnya: <a href="switch">Percabangan dengan Switch (Switch)</a>.
+      </p>
+      
+      <p class="footer">
+        oleh <a href="http://prahesa.id">Prahesa K Setia</a> | <a href="https://github.com/hesahesa/gobyexample">kode sumber</a> | <a href="https://github.com/hesahesa/gobyexample#license">lisensi</a>
+      </p>
+    </div>
+    <script>
+      var codeLines = [];
+      codeLines.push('');codeLines.push('package main\u000A');codeLines.push('import \"fmt\"\u000A');codeLines.push('func main() {\u000A');codeLines.push('    if 7%2 \x3D\x3D 0 {\u000A        fmt.Println(\"7 genap\")\u000A    } else {\u000A        fmt.Println(\"7 ganjil\")\u000A    }\u000A');codeLines.push('    if 8%4 \x3D\x3D 0 {\u000A        fmt.Println(\"8 habis dibagi 4\")\u000A    }\u000A');codeLines.push('    if num :\x3D 9; num \x3C 0 {\u000A        fmt.Println(num, \"negatif\")\u000A    } else if num \x3C 10 {\u000A        fmt.Println(num, \"punya 1 digit\")\u000A    } else {\u000A        fmt.Println(num, \"punya banyak digit\")\u000A    }\u000A}\u000A');codeLines.push('');codeLines.push('');codeLines.push('');
+    </script>
+    <script src="site.js" async></script>
+    <!-- Histats.com  START  (aync)-->
+    <script type="text/javascript">var _Hasync= _Hasync|| [];
+    _Hasync.push(['Histats.start', '1,4406489,4,0,0,0,00000000']);
+    _Hasync.push(['Histats.fasi', '1']);
+    _Hasync.push(['Histats.track_hits', '']);
+    (function() {
+    var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+    hs.src = ('//s10.histats.com/js15_as.js');
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+    })();</script>
+    <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4406489&101" alt="counter" border="0"></a></noscript>
+    <!-- Histats.com  END  -->
+  </body>
+</html>
